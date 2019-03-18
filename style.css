@@ -106,7 +106,7 @@ section {
 .line {
   position: fixed;
   height: 200px;
-  transform: translateY(-325%) translateX(-50%) rotate(45deg);
+  transform: translateY(ty) translateX(tx) rotate(45deg);
   left: 50%; }
 
 .footer {
