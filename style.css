@@ -106,7 +106,7 @@ section {
 .line {
   position: fixed;
   height: 200px;
-  transform: translateY(ty) translateX(tx) rotate(45deg);
+  transform: translateY(-325%) translateX(-50%) rotate(45deg);
   left: 50%; }
 
 .footer {
@@ -186,6 +186,3 @@ section {
   display: block;
   width: 100%;
   margin-bottom: -0.7;
-  /* your line-height */ }
-
-/*# sourceMappingURL=style.css.map */
