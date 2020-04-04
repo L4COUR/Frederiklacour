@@ -8,10 +8,15 @@ body {
   background-color: #f0f0f0;
 }
 
-#about h2{margin-top: 15%;margin-bottom: 8%;}
-img {
-width: 100%;padding: 20px;border-radius: 50%;
-margin-top: 15%;
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 0 100px;
+  background-color: #000;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: -1;
 }
 
 p {
@@ -77,6 +82,7 @@ nav {
   body{
     overflow-x: hidden;
   }
+
 h2{margin-top: 5%;margin-bottom: 2%;}
 
   .nav-links{
@@ -98,6 +104,7 @@ h2{margin-top: 5%;margin-bottom: 2%;}
   .burger{
     display: block;
   }
+
 }
 
 .nav-active{
@@ -123,4 +130,17 @@ transform: rotate(-0deg) translate(30px, 20px);
 }
 .toggle .line3{
 transform: rotate(-30deg) translate(0px, -1px);
+}
+
+#about h2{margin-top: 15%;margin-bottom: 8%;z-index: -1;}
+img {
+width: 100%;
+padding: 20px;
+border-radius: 50%;
+margin-top: 15%;
+position: relative;
+}
+
+ul.nav-links.nav-active {
+  z-index: 1111;
 }
