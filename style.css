@@ -126,7 +126,7 @@ h2{margin-top: 5%;margin-bottom: 2%;}
 transform: rotate(30deg) translate(0px, 1px);
 }
 .toggle .line2{
-transform: rotate(-0deg) translate(30px, 20px);
+transform: rotate(-0deg) translate(30px, 10px);
 }
 .toggle .line3{
 transform: rotate(-30deg) translate(0px, -1px);
