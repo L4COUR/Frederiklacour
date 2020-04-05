@@ -1,1 +1,1 @@
-https://l4cour.github.io/frederiklacour/
+https://l4cour.github.io/lacour/
