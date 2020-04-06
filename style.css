@@ -160,11 +160,13 @@ transform: rotate(-30deg) translate(0px, -3px);
 }
 
 #about h2{margin-top: 5%;margin-bottom: 8%;z-index: -1;}
-img {
+
+.about_image {
 width: 100%;
 padding: 10px;
 margin-top: 15%;
 position: relative;
+border-radius: 50%;
 }
 
 ul.nav-links.nav-active {
@@ -185,13 +187,13 @@ ul.filters > li{
 
 ul.filters > li > a{
   display: block;
-  color: #434e5e;
+  color: #000;
   text-decoration: none;
   padding: 5px 20px;
 }
 
 ul.filters > li > a:hover{
-  background-color: #e6e9ed;
+  background-color: rgba(0,0,0,0.4);
 }
 
 ul.filters > li.active > a{
@@ -200,7 +202,7 @@ ul.filters > li.active > a{
 }
 
 .cards {
-  grid-column: 2 /span 12;
+  grid-column: 3 /span 12;
   display: grid;
   grid-template-columns: repeat(12, minmax(auto, 60px));
   grid-gap: 40px;
@@ -210,14 +212,44 @@ ul.filters > li.active > a{
   grid-column-end: span 4;
   display: flex;
   flex-direction: column;
-  background-color: #999;
+  background-color: #000;
+  border: 1px solid #eee;
   color: #fff;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
+  transition: all 0s ease 0s;
 }
 
+.card-head{
+    position: relative;
+    overflow: hidden;
+}
+
+.card-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color :#fff;
+    -webkit-transition: ease-in-out 0.6s;
+    -moz-transition: ease-in-out 0.6s;
+    -ms-transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;
+}
+
+
 .card:hover {
-  transform: translateY(-7px);
+  transform: translateY(-0px);
+}
+
+.card-body{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .card_image-container {
@@ -239,9 +271,31 @@ ul.filters > li.active > a{
   margin-bottom: 20px;
 }
 
+h4.title{
+    color: #aaa;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+h2.title{
+    color: #fff;
+    background-color: #000;
+    font-size: 1.4rem;
+    margin-bottom: 40%;
+}
+
 @media only screen and (max-width: 1000px) {
   .card{
     grid-column-end: span 6;
+  }
+
+  h2.title{
+      color: #fff;
+      background-color: #000;
+      font-size: 2.4rem;
+      margin-bottom: -70%;
   }
 }
 
@@ -266,5 +320,12 @@ ul.filters > li.active > a{
   }
   .card{
     grid-column-end: span 6;
+  }
+
+  h2.title{
+      color: #fff;
+      background-color: #000;
+      font-size: 2.2rem;
+      margin-bottom: -60%;
   }
 }
