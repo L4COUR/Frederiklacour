@@ -1,13 +1,18 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-<title>Projects</title>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width initial-scale=1'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="isotope.min.js"></script>
+  <script src="script.js"></script>
+  <title>Projects</title>
 </head>
 <body>
-  <div class="menu">
+    <!navigation-bar>
     <nav class="menu">
       <div class="logo">
         <h1 class="land">PROJECTS</h1>
@@ -25,10 +30,85 @@
         </div>
         <div class="line3">
         </div>
+      </div></nav>
+    <!navigation-bar>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="filters text-center">
+            <li class="active" data-filter="*"><a href="#!">All</a></li>
+            <li data-filter=".workshop"><a href="#!">Workshop</a></li>
+            <li data-filter=".performance"><a href="#!">Performance</a></li>
+            <li data-filter=".cc"><a href="#!">Creative Coding</a></li>
+          </ul>
+
+          <div class="projects">
+            <div class="row">
+
+              <div class="col-lg-4 item workshop">
+                <a href="https://github.com/L4COUR/PCD2020_SonicPi_Workshop" style="text-decoration: none; color: #000;"><div class="card">
+                  <div class="card-head">
+                    <img src="profile/PCDworkshopwrolf.jpg" alt="" class="img-fluid card-img">
+                    <div class="card-overlay">
+                      <h2>Live Coding with Sonic Pi</h2>
+                    </div>
+                    <div class="card-hover">
+                      <h2></h2>
+                      <p>An introduction to Live Coding as a culture and a performative practice. Processing Community Day 2020</p>
+                    </div>
+                  </div>
+                  <div class="card-body text-center">
+                    <h4 class="title">Workshop</h4>
+                  </div>
+                </div></a>
+              </div>
+
+              <div class="col-lg-4 item performance">
+                <div class="card">
+                  <div class="card-head">
+                    <img src="image.jpg" alt="" class="img-fluid card-img">
+                    <div class="card-overlay">
+                      <h2>Performance</h2>
+                    </div>
+                    <div class="card-hover">
+                      <h2></h2>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="card-body text-center">
+                    <h4 class="title">Performance</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item cc">
+                <div class="card">
+                  <div class="card-head">
+                    <img src="image.jpg" alt="" class="img-fluid card-img">
+                    <div class="card-overlay">
+                      <h2>Creative Coding</h2>
+                    </div>
+                    <div class="card-hover">
+                      <h2></h2>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="card-body text-center">
+                    <h4 class="title">Creative Coding</h4>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
-    <script type="text/javascript" src="app.js"></script>
-  </div>
-  <p>here are all of my cool projects</p>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="isotope.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

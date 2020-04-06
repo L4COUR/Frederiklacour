@@ -163,11 +163,108 @@ transform: rotate(-30deg) translate(0px, -3px);
 img {
 width: 100%;
 padding: 10px;
-border-radius: 50%;
 margin-top: 15%;
 position: relative;
 }
 
 ul.nav-links.nav-active {
   z-index: 1111;
+}
+
+ul.filters{
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 30px 0;
+}
+
+ul.filters > li{
+  list-style: none;
+  display: inline-block;
+}
+
+ul.filters > li > a{
+  display: block;
+  color: #434e5e;
+  text-decoration: none;
+  padding: 5px 20px;
+}
+
+ul.filters > li > a:hover{
+  background-color: #e6e9ed;
+}
+
+ul.filters > li.active > a{
+  color: #fff;
+  background-color: #000;
+}
+
+.cards {
+  grid-column: 2 /span 12;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(auto, 60px));
+  grid-gap: 40px;
+}
+
+.card {
+  grid-column-end: span 4;
+  display: flex;
+  flex-direction: column;
+  background-color: #999;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+}
+
+.card_image-container {
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  position: relative;
+}
+
+.card_image-container img{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card_content {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card{
+    grid-column-end: span 6;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    grid-gap: 20px;
+  }
+  .card{
+    grid-column-end: span 12;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    grid-template-columns: 10px repeat(0, 1fr) 10px;
+    grid-gap: 10px;
+  }
+  .cards{
+    grid-column: 2 / span 6;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
+  .card{
+    grid-column-end: span 6;
+  }
 }
