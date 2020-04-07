@@ -14,7 +14,7 @@ p {
 }
 
 .land {
-  letter-spacing: 20px;
+  letter-spacing: 5px;
   font-weight: lighter;
 }
 
@@ -103,6 +103,7 @@ nav {
   background-color: white;
   margin-bottom: 8px;
   transition: all 0.2s ease;
+  z-index: 9999;
 }
 
 @media screen and (max-width:768px){
@@ -110,7 +111,7 @@ nav {
     overflow-x: hidden;
   }
 
-#about h2{margin-top: 5%;margin-bottom: 5%; text-align: center; width: 100%;}
+#about h2{margin-top: 5%;margin-bottom: 5%; text-align: center; width: 100%;z-index: -1; font-size: 15px;}
 
   .nav-links{
     position: absolute;
@@ -170,7 +171,7 @@ border-radius: 50%;
 }
 
 ul.nav-links.nav-active {
-  z-index: 1111;
+  z-index: 8;
 }
 
 ul.filters{
@@ -237,7 +238,7 @@ main{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 9;
+    z-index: 1;
     background-color: rgba(0,0,0,0.4);
     display: flex;
     align-items: center;
@@ -274,8 +275,32 @@ main{
   transform: translate(-50%, -50%);
 }
 
+.image-resize{
+  height: 230px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
 .card_content {
   margin-bottom: 20px;
+}
+
+.card-p{
+  text-align: left;
+  font-size: 12.5px;
+  margin-left: 15px;
+  margin-right: 13px;
+  margin-top: 5px;
+}
+
+.card-info{
+  font-size: 10px;
+  text-align: right;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  color: #aaa;
 }
 
 h4.title{
