@@ -9,6 +9,7 @@
         itemSelector: '.item',
         layoutMode: 'fitRows'
     });
+    
 
     $('ul.filters > li').on('click', function(e){
 
@@ -34,5 +35,9 @@
         $(this).find('.card-hover').css({'top':'100%'});
 
     });
+
+$.getScript('main.js'), function(){
+  $('.portfolio-active').isotope();
+}
 
 })(jQuery);

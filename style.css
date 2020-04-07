@@ -201,19 +201,25 @@ ul.filters > li.active > a{
   background-color: #000;
 }
 
-.cards {
-  grid-column: 3 /span 12;
+main{
   display: grid;
-  grid-template-columns: repeat(12, minmax(auto, 60px));
+  grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
   grid-gap: 40px;
+  padding: 60px 0;
+}
+
+.cards {
+  grid-column: 3 / span 12;
+  display: grid;
 }
 
 .card {
+  position: relative;
+  margin-bottom: 40px;
   grid-column-end: span 4;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   background-color: #000;
-  border: 1px solid #eee;
   color: #fff;
   cursor: pointer;
   transition: all 0s ease 0s;
@@ -222,6 +228,7 @@ ul.filters > li.active > a{
 .card-head{
     position: relative;
     overflow: hidden;
+    height: 50%;
 }
 
 .card-overlay{
@@ -254,13 +261,13 @@ ul.filters > li.active > a{
 
 .card_image-container {
   width: 100%;
-  padding-top: 56.25%;
   overflow: hidden;
   position: relative;
 }
 
 .card_image-container img{
   width: 100%;
+  padding-top: 56.25%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -310,22 +317,22 @@ h2.title{
 
 @media only screen and (max-width: 500px) {
   main {
-    grid-template-columns: 10px repeat(0, 1fr) 10px;
+    grid-template-columns: 10px repeat(0, 1fr);
     grid-gap: 10px;
   }
   .cards{
     grid-column: 2 / span 6;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(200, 1fr);
     grid-gap: 20px;
   }
   .card{
-    grid-column-end: span 6;
+    grid-column-end: span 12;
   }
 
   h2.title{
       color: #fff;
       background-color: #000;
       font-size: 2.2rem;
-      margin-bottom: -60%;
+      margin-bottom: 60%;
   }
 }
