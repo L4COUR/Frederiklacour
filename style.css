@@ -317,9 +317,8 @@ h2.title{
 
   .nav-links{
     position: absolute;
-      right: 0px;
-      height: 100%;
-      top: 11vh;
+      height: 100vh;
+      top: 80px;
       background-color: rgba(0,0,0,0.9);
       display: none;
       flex-direction: column;
@@ -327,7 +326,8 @@ h2.title{
       width: 100%;
       transform: translateX(0%);
       transition: transform 0.5s ease-in;
-    }
+      padding-bottom: 200px;
+  }
 
   .nav-links li{
     opacity: 0;
@@ -374,9 +374,8 @@ h2.title{
 
     .nav-links{
       position: absolute;
-        right: 0px;
-        height: 100%;
-        top: 11vh;
+        height: 100vh;
+        top: 80px;
         background-color: rgba(0,0,0,0.9);
         display: none;
         flex-direction: column;
@@ -384,6 +383,7 @@ h2.title{
         width: 100%;
         transform: translateX(0%);
         transition: transform 0.5s ease-in;
+        padding-bottom: 200px;
     }
 
   .nav-links li{
