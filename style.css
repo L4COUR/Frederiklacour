@@ -297,6 +297,43 @@ h2.title{
     margin-bottom: 40%;
 }
 
+.overlay-iframe{
+  position: relative;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  bottom: 1%;
+}
+
+.overlay h1{
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  top: 28%;
+}
+
+.fade-in{
+  animation: fadeIn 12s;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   html,body{
     overflow-x: hidden;
@@ -392,47 +429,19 @@ h2.title{
     .burger{
     display: block;
   }
+
+  .overlay h1{
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    top: 28%;
+  }
 }
 
 .nav-active{
     transform: translateX(0%);
     display: flex;
-}
-
-.overlay-iframe{
-  position: relative;
-}
-
-.overlay-iframe h1{
-  position: absolute;
-  background-color: #000;
-  color: #fff;
-  top: 40%;
-  left: 40%;
-  letter-spacing: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 60px;
-}
-
-.overlay{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.3);
-  bottom: 1%;
-}
-
-.fade-in{
-  animation: fadeIn 12s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
