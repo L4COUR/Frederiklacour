@@ -308,7 +308,7 @@ h2.title{
   .nav-links{
     position: absolute;
       right: 0px;
-      height: 80%;
+      height: 100%;
       top: 11vh;
       background-color: rgba(0,0,0,0.9);
       display: none;
@@ -328,43 +328,7 @@ h2.title{
 
 }
 
-@media only screen and (max-width: 700px) {
-  html,body{
-    width:700px;
-    overflow-x: hidden;
-  }
-
-  main {
-    grid-gap: 20px;
-  }
-  .card{
-    grid-column-end: span 12;
-  }
-
-  #about h2{margin-top: 5%;margin-bottom: 5%; text-align: center; width: 100%;z-index: -1;}
-
-  .nav-links{
-    position: absolute;
-      right: 0px;
-      height: 80%;
-      top: 11vh;
-      background-color: rgba(0,0,0,0.9);
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      transform: translateX(0%);
-      transition: transform 0.5s ease-in;
-    }
-    .nav-links li{
-      opacity: 0;
-    }
-    .burger{
-      display: block;
-    }
-}
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   html,body{
     width:500px;
     overflow-x: hidden;
@@ -395,7 +359,7 @@ h2.title{
     .nav-links{
       position: absolute;
         right: 0px;
-        height: 80%;
+        height: 100%;
         top: 11vh;
         background-color: rgba(0,0,0,0.9);
         display: none;
