@@ -336,16 +336,12 @@ h2.title{
   }
 }
 
-.text-left{
-  padding-top: 30px;
-}
-
 .social-menu ul {
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 200px;
+    padding: 1px;
     margin: 0px;
     display: flex;
 }
@@ -469,7 +465,17 @@ h2.title{
       margin-bottom: 60%;
   }
 
-  #about h2{margin-top: 5%;margin-bottom: 5%; text-align: center; width: 100%;z-index: -1;}
+  #about h2{
+    margin-top: 0;
+    margin-bottom: 5%;
+    text-align: center;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .col-sm-7{
+    transform: translateY(10%)
+  }
 
     .nav-links{
       position: absolute;
