@@ -288,7 +288,6 @@ h2.title{
 
 @media only screen and (max-width: 1000px) {
   html,body{
-    width:1000px;
     overflow-x: hidden;
   }
 
@@ -330,7 +329,6 @@ h2.title{
 
 @media only screen and (max-width: 600px) {
   html,body{
-    width:500px;
     overflow-x: hidden;
   }
 
