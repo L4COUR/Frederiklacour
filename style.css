@@ -125,23 +125,33 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 10px;
   min-height: 2vh;
   background-color: #000;
 }
 
 .logo {
-  background-color: white;
-  letter-spacing: 5px;
-  height: 70px
+  padding: 20px;
+  line-height: 8px;
+  color: white;
+  letter-spacing: 3px;
+  height: 50px
   display: flex;
   align-items: center;
-  max-width: 100%;
-  min-width: 0;
-  text-align: left;
+  text-align: center;
   width: auto;
   overflow: hidden;
+}
+
+.site-title {
+  line-height: 8px;
+  font-size: 26px;
+}
+
+.site-description {
+  font-size: 10px;
+  letter-spacing: 4px;
 }
 
 .nav-links{
