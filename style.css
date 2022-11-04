@@ -14,6 +14,14 @@
   zoom: 1.0;
 }
 
+a {
+  color: #9BECD6;
+}
+
+a:hover {
+  color: #9BECD6;
+}
+
 html,body{
   overflow-x: hidden;
   height: 100%;
@@ -72,7 +80,7 @@ display: grid;
     transition: .1s;
 }
 .footer-SOME ul li .fa:hover {
-    color: #fff;
+    color: #9BECD6;
 }
 .footer-SOME ul li a {
     position: relative;
@@ -149,6 +157,15 @@ nav {
   font-size: 26px;
 }
 
+.site-title a {
+  color: white;
+}
+
+.site-title a:hover {
+  color: #9BECD6;
+  text-decoration: none;
+}
+
 .site-description {
   font-size: 10px;
   letter-spacing: 4px;
@@ -176,26 +193,10 @@ nav {
 }
 
 .nav-links a:hover{
-  background-color:#F7F7F7;
+  background-color: #9BECD6;
   color: black;
   padding-left: 60px;
   padding-right: 0px;
-}
-
-.line::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 15px;
-  background: #F7F7F7;
-  transition: width 1s;
-
-}
-
-.line:hover::after {
-  width: 100%;
-  transistion: width 12s;
-
 }
 
 .burger{
@@ -242,9 +243,8 @@ transform: rotate(-30deg) translate(0px, -3px);
 
 .about_image {
 width: 100%;
-height: 80%;
-padding: 30px;
-margin-top: 5%;
+padding: 10px;
+margin-top: 8%;
 position: relative;
 }
 
@@ -454,7 +454,7 @@ h2.title{
     transition: .1s;
 }
 .social-menu ul li .fa:hover {
-    color: #ffffff;
+    color: #000000;
 }
 .social-menu ul li a {
     position: relative;
@@ -471,22 +471,22 @@ h2.title{
     transform: rotate(0deg) skew(0deg) translate(0, -1px);
 }
 .social-menu ul li:nth-child(1) a:hover {
-    background-color: #3b5999;
+    background-color: #9BECD6;
 }
 .social-menu ul li:nth-child(2) a:hover {
-    background-color: #e4405f;
+    background-color: #9BECD6;
 }
 .social-menu ul li:nth-child(3) a:hover {
-    background-color: #131418;
+    background-color: #9BECD6;
 }
 .social-menu ul li:nth-child(4) a:hover {
-    background-color: #1ab7ea;
+    background-color: #9BECD6;
 }
 .social-menu ul li:nth-child(5) a:hover {
-    background-color: #ff3300;
+    background-color: #9BECD6;
 }
 .social-menu ul li:nth-child(6) a:hover {
-    background-color: #0077B5;
+    background-color: #9BECD6;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -607,9 +607,7 @@ h2.title{
 
   .about_image {
   width: 100%;
-  height: 10%;
   padding: 20px;
-  margin-top: 5%;
   position: relative;
   }
 
