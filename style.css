@@ -187,16 +187,14 @@ nav {
   color: white;
   text-decoration: none;
   letter-spacing: 4px;
-  font-size: 14px;
-  padding-left: 60px;
-  padding-right: 0px;
+  font-size: 18px;
+  padding: 40px;
 }
 
 .nav-links a:hover{
   background-color: #9BECD6;
   color: black;
-  padding-left: 60px;
-  padding-right: 0px;
+  padding-left: 40px;
 }
 
 .burger{
@@ -208,9 +206,14 @@ nav {
 .burger div{
   width: 25px;
   height: 1px;
-  background-color: white;
+  background-color: #ffffff;
   margin-bottom: 8px;
   transition: all 0.2s ease;
+}
+
+.burger:hover {
+  background-color: #9BECD6;
+  color: black;
 }
 
 @keyframes navLinkFade{
@@ -272,12 +275,13 @@ ul.filters > li > a{
 }
 
 ul.filters > li > a:hover{
-  background-color: rgba(0,0,0,0.4);
+  background-color: #ffffff;
+  color: #9BECD6;
 }
 
 ul.filters > li.active > a{
   color: #fff;
-  background-color: #000;
+  background-color: #9BECD6;
 }
 
 main{
