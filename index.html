@@ -1,70 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name='viewport' content='width=device-width initial-scale=1'>
-    <title>Frederik la Cour</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
-    <script src="https://kit.fontawesome.com/a84c15ddef.js" crossorigin="anonymous"></script>
 
-    <script src="p5.min.js"></script>
-    <script src="addons/p5.dom.min.js"></script>
-    <script src="addons/p5.sound.min.js"></script>
-  </head>
-  <body>
-    <div class="menu">
-      <nav class="menu">
-        <div class="logo">
-          <h1 class="land">~/</h1>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width initial-scale=1'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/a84c15ddef.js" crossorigin="anonymous"></script>
+  <title>about|Frederik la Cour</title>
+</head>
+
+<body>
+  <div class="menu">
+    <nav class="menu">
+      <div class="logo">
+        <div class="site-identity">
+          <p class="site-title">
+            <a href="index.html">Frederik la Cour</a>
+          </p>
+          <p class="site-description">Sound Designer|Composer</p>
         </div>
-        <ul class="nav-links">
-          <li><a href="index.html" class="line">Home</a></li>
-          <li><a href="projects.html" class="line">Projects</a></li>
-          <li><a href="CV.html" class="line">CV</a></li>
-          <li><a href="About.html" class="line">About Me</a></li>
-        </ul>
-        <div class="burger">
-          <div class="line1">
-          </div>
-          <div class="line2">
-          </div>
-          <div class="line3">
-          </div>
-        </div>
-      </nav>
-      <script type="text/javascript" src="app.js"></script>
-    </div>
-    <div class="overlay-iframe fade-in">
-      <div class="i-frame" style="padding:56.25% 0 0 0;position:relative;">
-        <iframe src="https://player.vimeo.com/video/396270237?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      </div><script src="https://player.vimeo.com/api/player.js"></script>
-      <div class="overlay">
-          <h1>Frederik la Cour</h1>
       </div>
-    </div>
-    <footer>
-      <div class="footer">
-        <div class="footer-copyright">
-          <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>
-            <p>Frederik la Cour</p>
+      <ul class="nav-links">
+        <li><a href="projects.html" class="line">projects</a></li>
+        <li><a href="index.html" class="line">about</a></li>
+        <li><a href="CV.html" class="line">cv</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1">
         </div>
-        <div class="footer-SOME">
+        <div class="line2">
+        </div>
+        <div class="line3">
+        </div>
+      </div>
+    </nav>
+  </div>
+  <script type="text/javascript" src="app.js"></script>
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="img-wrap">
+            <img src="profile/profile2022.jpg" class="about_image">
+          </div>
+          <div class="social-menu">
             <ul>
-              <li><a href="https://www.facebook.com/L4COUR/"><i class="fa fa-facebook"></i></a></li>
               <li><a href="https://www.instagram.com/la__cour/"><i class="fa fa-instagram"></i></a></li>
               <li><a href="https://github.com/L4COUR"><i class="fa fa-github"></i></a></li>
-              <li><a href="https://vimeo.com/l4cour"><i class="fa fa-vimeo"></i></a></li>
-              <li><a href="https://soundcloud.com/l4cour"><i class="fa fa-soundcloud"></i></a></li>
               <li><a href="https://www.linkedin.com/in/l4cour/"><i class="fa fa-linkedin"></i></a></li>
             </ul>
+          </div>
         </div>
-        <div class="footer-Contact">
-          <p style="font-weight: bold;">CONTACT</p>
-          <p>frederiklacour@protonmail.com</p>
+        <div class="col-sm-7">
+          <h2 class="text-left">about</h2>
+          <p>Currently doing his MA in Audiodesign, Aarhus University.
+              Finished his BA in Digital Design, Aarhus University, in 2020.</p>
+          <p>He has a particular interest in sounddesign, soundscapes, sound-art,
+            game-audio, audio-technology interfaces, physical computing and aesthetic programming.</p>
+          <p>Currently employed at Aarhus University as Audio technical Student Assistent,
+            mainting and working with various advanced forms of audio-equipment and researching and working with 3D audio-systems.
+            Formerly employed at Aarhus University’s Digital Design Lab,
+            where he introduced students to new technologies, tools, and techniques, of working with 3D-printing, Laser-cutting, CNC milling, and physical computing through Arduino.
+          </p>
+          <p>
+            He has contributed to code&share-aarhus since 2019. An open forum for people interested in coding and software development beyond the purely functional. Here he organised workshops on various Live Coding environments, as well as helped organise the Processing Community Day 2020 in Aarhus.
+          </p>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <div class="footer-copyright">
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>
+          <p>Frederik la Cour | Sound Designer</p>
+      </div>
+      <div class="footer-SOME">
+          <ul>
+            <li><a href="https://www.instagram.com/la__cour/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/L4COUR"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/l4cour/"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+      </div>
+      <div class="footer-Contact">
+        <p style="font-weight: bold;">CONTACT</p>
+        <p>frederiklacour@protonmail.com</p>
+        <p>Tel: +45 21 66 78 37</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

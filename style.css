@@ -101,10 +101,10 @@ display: grid;
 }
 
 .land {
-  letter-spacing: 12px;
-  font-size: 36px;
-  font-weight: lighter;
+  letter-spacing: 5px;
+  font-size: 24px;
 }
+
 
 .row {
   margin-top: 0%;
@@ -132,8 +132,16 @@ nav {
 }
 
 .logo {
-  color: white;
+  background-color: white;
   letter-spacing: 5px;
+  height: 70px
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  min-width: 0;
+  text-align: left;
+  width: auto;
+  overflow: hidden;
 }
 
 .nav-links{
@@ -228,7 +236,6 @@ height: 80%;
 padding: 30px;
 margin-top: 5%;
 position: relative;
-border-radius: 50%;
 }
 
 ul.nav-links.nav-active {
@@ -594,7 +601,6 @@ h2.title{
   padding: 20px;
   margin-top: 5%;
   position: relative;
-  border-radius: 50%;
   }
 
   .social-menu ul {
